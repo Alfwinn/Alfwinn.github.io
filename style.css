@@ -13,6 +13,8 @@ body {
   box-sizing: border-box;
 }
 
+.submit { -webkit-appearance: none; }
+
 html {
   font-family: "Cormorant Garamond", serif;
   text-transform: uppercase;
@@ -69,7 +71,8 @@ button {
 }
 
 .card {
-  background-color: #e9e4d8;
+  background-color: #f4f1eb;
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
   height: 200px;
   width: 350px;
   margin: 20vh auto 0 auto;
