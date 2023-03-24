@@ -5,6 +5,8 @@ body {
   Hover and click on the card for animations!
 */
 
+.header
+
 @import url(https://fonts.googleapis.com/css?family=Cormorant+Garamond);
 
 *,
@@ -12,8 +14,6 @@ body {
 *::after {
   box-sizing: border-box;
 }
-
-.submit { -webkit-appearance: none; }
 
 html {
   font-family: "Cormorant Garamond", serif;
@@ -90,17 +90,17 @@ button {
   box-shadow: 20px 20px 20px rgba(0, 0, 0, .4);
 }
 
-.card:focus {
+.card:hover {
   transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateZ(10px);
   box-shadow: 0px 10px 10px rgba(0, 0, 0, .4);
 }
 
-.card:focus::before {
+.card:hover::before {
   transform: skewX(0deg) translateX(0px) translateY(0px);
   height: 0px;
 }
 
-.card:focus::after {
+.card:hover::after {
   transform: skewY(0deg) translateX(0px) translateY(0px);
   width: 0px;
 }
@@ -152,5 +152,6 @@ button {
 p {
   margin: 0;
 }
+
 
 
