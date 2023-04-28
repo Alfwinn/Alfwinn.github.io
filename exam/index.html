@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Klipp Studio</title>
+  <link rel=stylesheet href="style.css">
+
+</head>
+
+<body>
+
+  <h1>Andréa Frisör x Angelica Frisör</h1>
+  <div class="header">
+  </div>
+
+  <div class="config-bar">
+
+    <button id="login-knapp" onclick="document.getElementById('id01').style.display='block'"
+      style="width:auto;">Login</button>
+    <h2 id="adress">Köpmangatan 44c</h2>
+
+    <div id="id01" class="modal">¨
+
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Användarnamn</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label for="psw"><b>Lösenord</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Kom ihåg mig
+          </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'"
+            class="cancelbtn">Avsluta</button>
+          <span class="psw">Glömt <a href="#">Lösenord?</a></span>
+        </div>
+      </form>
+
+      <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+      </script>
+    </div>
+  </div>
+
+  <div class="flex-container">
+
+    <div class="a1">
+      <div class="frisör-bild-1"><img src="pictures/Avatar-Andrea.webp" width="250px" alt="Andrea"></div>
+      <div class="Andrea-namn"><a>Andréa</a></div>
+      <div class="Andrea-pre-info"><a></a></div>
+      <div class="Andrea-info"></div>
+      <div class="Andrea-info-overlay">
+        <img src="pictures/Instagram_logo.png" width="42px" class="Andrea-Instagram">
+        <img src="pictures/facebook-logo.png" width="63px" class="Andrea-facebook">
+        <p class="Text-Socialamedier">Sociala medier</p>
+        <p class="Text-andrea-tel">Telefonnummer: <br>070-558 89 72</p>
+        <p class="Text-andrea-email">Email: info@ <br>andreafrisor.se</p>
+        <div class="Andrea-Kontakta-mig"><a>Kontakta mig?</a></div>
+        <div class="Andrea-Sm1"></div>
+        <div class="Andrea-Sm2"></div>
+      </div>
+
+      <button onclick="location.href='index2.html';"class="Andrea-boka-knapp"><span> Boka Nu </span></button>
+    </div>
+
+    <div class="a2">
+      <div class="frisör-bild-2"><img src="pictures/Angelica-Avatar.png" width="250px" alt="Angelica"></div>
+      <div class="Angelica-namn"><a>Angelica</a></div>
+      <div class="Angelica-pre-info"><a></a></div>
+      <div class="Angelica-info"></div>
+      <div class="angelica-info-overlay">
+        <img src="pictures/Instagram_logo.png" width="42px" class="Andrea-Instagram">
+        <img src="pictures/facebook-logo.png" width="63px" class="Andrea-facebook">
+        <p class="Text-Socialamedier">Sociala medier</p>
+        <p class="Text-angelica-tel">Telefonnummer: <br>070-558 89 72</p>
+        <p class="Text-angelica-email">Email: info@ <br>andreafrisor.se</p>
+        <div class="Angelica-Kontakta-mig"><a>Kontakta mig?</a></div>
+        <div class="Angelica-Sm1"></div>
+        <div class="Angelica-Sm2"></div>
+      </div>
+    </div>
+</body>
+<script src="javascript.js"></script>
+
+</html>
